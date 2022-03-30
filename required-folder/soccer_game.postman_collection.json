@@ -1,0 +1,1717 @@
+{
+	"info": {
+		"_postman_id": "3da58631-3062-4693-b542-ae2264a710b3",
+		"name": "soccer_game",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Admin Signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NiIsImlzcyI6Iis5MDUzNDg5NDMwNDMiLCJyb2xlSWQiOjE4LCJ1c2VySWQiOiI2NiIsImlzQWRtaW4iOmZhbHNlLCJsYW5ndWFnZUlkIjo4LCJpYXQiOjE2MTcyNjMwNDEsImV4cCI6MTYxNzM0OTQ0MSwidGVuYW50SWQiOjF9.QvWejNHth5goVWX8VTDmAPM_rUu7lNzi5AC4hnoSAHA",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/authentication/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"authentication",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Signin - 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NiIsImlzcyI6Iis5MDUzNDg5NDMwNDMiLCJyb2xlSWQiOjE4LCJ1c2VySWQiOiI2NiIsImlzQWRtaW4iOmZhbHNlLCJsYW5ndWFnZUlkIjo4LCJpYXQiOjE2MTcyNjMwNDEsImV4cCI6MTYxNzM0OTQ0MSwidGVuYW50SWQiOjF9.QvWejNHth5goVWX8VTDmAPM_rUu7lNzi5AC4hnoSAHA",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"user1@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/authentication/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"authentication",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Signin - 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NiIsImlzcyI6Iis5MDUzNDg5NDMwNDMiLCJyb2xlSWQiOjE4LCJ1c2VySWQiOiI2NiIsImlzQWRtaW4iOmZhbHNlLCJsYW5ndWFnZUlkIjo4LCJpYXQiOjE2MTcyNjMwNDEsImV4cCI6MTYxNzM0OTQ0MSwidGVuYW50SWQiOjF9.QvWejNHth5goVWX8VTDmAPM_rUu7lNzi5AC4hnoSAHA",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"user2@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/authentication/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"authentication",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"user2@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"ROLE_USER\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/authentication/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"authentication",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"admin@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"ROLE_ADMIN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/authentication/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"authentication",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Player",
+			"item": [
+				{
+					"name": "get/{id}",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJ1c2VySWQiOjMzLCJpYXQiOjE2NDg1ODEyNjMsImV4cCI6MTY0ODYxNzI2M30.qSp0xBz0W7zBZbfosR0h9s78W3gzHWEmuy3p7GQDX7MY8I_qVpqSpuJp0Ut3JO3BTC7-rlG43n5_MMhNyJCoDQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/player/get/136",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"player",
+								"get",
+								"136"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:8081/api/voiceMail/voiceMailActivation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMiIsImlzcyI6ImxpZmVjZWxsLWFkbWluIiwicm9sZUlkIjoxOSwidXNlcklkIjoiMTIiLCJpc0FkbWluIjpmYWxzZSwibGFuZ3VhZ2VJZCI6OCwiaWF0IjoxNjE0ODQ4Mjg0LCJleHAiOjE2MTQ5MzQ2ODQsInRlbmFudElkIjoxfQ.iJQVziA8KQrVAw3Z8oVrR7toqw1-cy58Z-HCx-Lzb20",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"msisdn\": \"05396394066\",\r\n    \"deactivationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"activationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"status\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/voiceMail/voiceMailActivation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"voiceMail",
+										"voiceMailActivation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 06:51:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Added\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "getByTeamId/{id}",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMUBnbWFpbC5jb20iLCJ1c2VySWQiOjUwLCJpYXQiOjE2NDg1ODEyNDksImV4cCI6MTY0ODYxNzI0OX0.tEH6dUuAeQ8YCPHli3963UMUqzTyauGAZKVgYnHC08-zmnRjKYHrInR8mV8hoznfhK-iFrGFHmgnHj-OhYmb_g"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/player/getByTeamId/27",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"player",
+								"getByTeamId",
+								"27"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:8081/api/voiceMail/voiceMailActivation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMiIsImlzcyI6ImxpZmVjZWxsLWFkbWluIiwicm9sZUlkIjoxOSwidXNlcklkIjoiMTIiLCJpc0FkbWluIjpmYWxzZSwibGFuZ3VhZ2VJZCI6OCwiaWF0IjoxNjE0ODQ4Mjg0LCJleHAiOjE2MTQ5MzQ2ODQsInRlbmFudElkIjoxfQ.iJQVziA8KQrVAw3Z8oVrR7toqw1-cy58Z-HCx-Lzb20",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"msisdn\": \"05396394066\",\r\n    \"deactivationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"activationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"status\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/voiceMail/voiceMailActivation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"voiceMail",
+										"voiceMailActivation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 06:51:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Added\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllPlayers",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJ1c2VySWQiOjMzLCJpYXQiOjE2NDg1ODEyNjMsImV4cCI6MTY0ODYxNzI2M30.qSp0xBz0W7zBZbfosR0h9s78W3gzHWEmuy3p7GQDX7MY8I_qVpqSpuJp0Ut3JO3BTC7-rlG43n5_MMhNyJCoDQ"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/player/getAllPlayers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"player",
+								"getAllPlayers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:8081/api/voiceMail/voiceMailActivation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMiIsImlzcyI6ImxpZmVjZWxsLWFkbWluIiwicm9sZUlkIjoxOSwidXNlcklkIjoiMTIiLCJpc0FkbWluIjpmYWxzZSwibGFuZ3VhZ2VJZCI6OCwiaWF0IjoxNjE0ODQ4Mjg0LCJleHAiOjE2MTQ5MzQ2ODQsInRlbmFudElkIjoxfQ.iJQVziA8KQrVAw3Z8oVrR7toqw1-cy58Z-HCx-Lzb20",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"msisdn\": \"05396394066\",\r\n    \"deactivationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"activationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"status\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/voiceMail/voiceMailActivation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"voiceMail",
+										"voiceMailActivation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 06:51:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Added\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Player Update For User",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMUBnbWFpbC5jb20iLCJ1c2VySWQiOjUwLCJpYXQiOjE2NDg1ODEyNDksImV4cCI6MTY0ODYxNzI0OX0.tEH6dUuAeQ8YCPHli3963UMUqzTyauGAZKVgYnHC08-zmnRjKYHrInR8mV8hoznfhK-iFrGFHmgnHj-OhYmb_g"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"teamId\": \"27\",\r\n  \"firstname\": \"user1@gmail.com- Team0\",\r\n  \"lastname\": \"Player\",\r\n  \"country\": \"country\",\r\n  \"age\": 18,\r\n  \"marketValue\" : 1000000,\r\n  \"position\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/player/125",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"player",
+								"125"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Player Update For Admin",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJ1c2VySWQiOjMzLCJpYXQiOjE2NDg1ODEyNjMsImV4cCI6MTY0ODYxNzI2M30.qSp0xBz0W7zBZbfosR0h9s78W3gzHWEmuy3p7GQDX7MY8I_qVpqSpuJp0Ut3JO3BTC7-rlG43n5_MMhNyJCoDQ"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"teamId\": \"27\",\r\n  \"firstname\": \"user1@gmail.com- Team0\",\r\n  \"lastname\": \"Player\",\r\n  \"country\": \"country\",\r\n  \"age\": 18,\r\n  \"marketValue\" : 1000000,\r\n  \"position\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/player/125",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"player",
+								"125"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Player Add For Admin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJ1c2VySWQiOjMzLCJpYXQiOjE2NDg1ODEyNjMsImV4cCI6MTY0ODYxNzI2M30.qSp0xBz0W7zBZbfosR0h9s78W3gzHWEmuy3p7GQDX7MY8I_qVpqSpuJp0Ut3JO3BTC7-rlG43n5_MMhNyJCoDQ"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"teamId\": \"27\",\r\n  \"firstname\": \"user2@gmail.com- Team20\",\r\n  \"lastname\": \"Player\",\r\n  \"country\": \"country\",\r\n  \"age\": 19,\r\n  \"marketValue\" : 1000000,\r\n  \"position\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/player/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"player",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Player Delete For Admin",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJ1c2VySWQiOjI3LCJpYXQiOjE2NDg1NDU5OTIsImV4cCI6MTY0ODU4MTk5Mn0.REubaHDCdo-_THfnZZL-1FDGP2RLNaAGItyvI2PU0BA5zaiF_ak0TBz5Xm0XUURwptEJlTs4dRIfknz1ofrQVw"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/player/delete/165",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"player",
+								"delete",
+								"165"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Team",
+			"item": [
+				{
+					"name": "get For User",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMUBnbWFpbC5jb20iLCJ1c2VySWQiOjUwLCJpYXQiOjE2NDg1ODEyNDksImV4cCI6MTY0ODYxNzI0OX0.tEH6dUuAeQ8YCPHli3963UMUqzTyauGAZKVgYnHC08-zmnRjKYHrInR8mV8hoznfhK-iFrGFHmgnHj-OhYmb_g"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/team/get",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"team",
+								"get"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:8081/api/voiceMail/voiceMailActivation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMiIsImlzcyI6ImxpZmVjZWxsLWFkbWluIiwicm9sZUlkIjoxOSwidXNlcklkIjoiMTIiLCJpc0FkbWluIjpmYWxzZSwibGFuZ3VhZ2VJZCI6OCwiaWF0IjoxNjE0ODQ4Mjg0LCJleHAiOjE2MTQ5MzQ2ODQsInRlbmFudElkIjoxfQ.iJQVziA8KQrVAw3Z8oVrR7toqw1-cy58Z-HCx-Lzb20",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"msisdn\": \"05396394066\",\r\n    \"deactivationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"activationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"status\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/voiceMail/voiceMailActivation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"voiceMail",
+										"voiceMailActivation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 06:51:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Added\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "getAll For Admin",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJ1c2VySWQiOjMzLCJpYXQiOjE2NDg1ODEyNjMsImV4cCI6MTY0ODYxNzI2M30.qSp0xBz0W7zBZbfosR0h9s78W3gzHWEmuy3p7GQDX7MY8I_qVpqSpuJp0Ut3JO3BTC7-rlG43n5_MMhNyJCoDQ"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/team/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"team",
+								"getAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:8081/api/voiceMail/voiceMailActivation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMiIsImlzcyI6ImxpZmVjZWxsLWFkbWluIiwicm9sZUlkIjoxOSwidXNlcklkIjoiMTIiLCJpc0FkbWluIjpmYWxzZSwibGFuZ3VhZ2VJZCI6OCwiaWF0IjoxNjE0ODQ4Mjg0LCJleHAiOjE2MTQ5MzQ2ODQsInRlbmFudElkIjoxfQ.iJQVziA8KQrVAw3Z8oVrR7toqw1-cy58Z-HCx-Lzb20",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"msisdn\": \"05396394066\",\r\n    \"deactivationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"activationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"status\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/voiceMail/voiceMailActivation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"voiceMail",
+										"voiceMailActivation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 06:51:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Added\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Team Update For User",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMUBnbWFpbC5jb20iLCJ1c2VySWQiOjUwLCJpYXQiOjE2NDg1ODEyNDksImV4cCI6MTY0ODYxNzI0OX0.tEH6dUuAeQ8YCPHli3963UMUqzTyauGAZKVgYnHC08-zmnRjKYHrInR8mV8hoznfhK-iFrGFHmgnHj-OhYmb_g"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"user1@gmail.com- Team12\",\r\n  \"value\": \"5000000\",\r\n  \"country\": \"TURKEY\",\r\n  \"userId\": 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/team/update/27",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"team",
+								"update",
+								"27"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Team Update For Admin",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJ1c2VySWQiOjMzLCJpYXQiOjE2NDg1ODEyNjMsImV4cCI6MTY0ODYxNzI2M30.qSp0xBz0W7zBZbfosR0h9s78W3gzHWEmuy3p7GQDX7MY8I_qVpqSpuJp0Ut3JO3BTC7-rlG43n5_MMhNyJCoDQ"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"user1@gmail.com- Team1\",\r\n  \"value\": \"5000000\",\r\n  \"country\": \"TURKEY\",\r\n  \"userId\": 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/team/update/27",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"team",
+								"update",
+								"27"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Team Delete For Admin",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJ1c2VySWQiOjMzLCJpYXQiOjE2NDg1ODEyNjMsImV4cCI6MTY0ODYxNzI2M30.qSp0xBz0W7zBZbfosR0h9s78W3gzHWEmuy3p7GQDX7MY8I_qVpqSpuJp0Ut3JO3BTC7-rlG43n5_MMhNyJCoDQ"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/team/delete/28",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"team",
+								"delete",
+								"28"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Team Add For Admin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJ1c2VySWQiOjMzLCJpYXQiOjE2NDg1ODEyNjMsImV4cCI6MTY0ODYxNzI2M30.qSp0xBz0W7zBZbfosR0h9s78W3gzHWEmuy3p7GQDX7MY8I_qVpqSpuJp0Ut3JO3BTC7-rlG43n5_MMhNyJCoDQ"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"userId\": 54,\r\n   \"username\": \"Dilara Team\",\r\n   \"country\": \"Turkey\",\r\n   \"name\": \"Dilara Team\",\r\n   \"value\": \"6000000\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/team/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"team",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TransferList",
+			"item": [
+				{
+					"name": "Team Add For User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMUBnbWFpbC5jb20iLCJ1c2VySWQiOjUwLCJpYXQiOjE2NDg1ODEyNDksImV4cCI6MTY0ODYxNzI0OX0.tEH6dUuAeQ8YCPHli3963UMUqzTyauGAZKVgYnHC08-zmnRjKYHrInR8mV8hoznfhK-iFrGFHmgnHj-OhYmb_g"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"playerId\": 142,\r\n    \"price\": 110000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/transferList/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transferList",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transfer For User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMkBnbWFpbC5jb20iLCJ1c2VySWQiOjU1LCJpYXQiOjE2NDg1ODI5MjAsImV4cCI6MTY0ODYxODkyMH0.el5oYdUU_kvyeVVRPVntKxJFhv4jxF7HKvx1sttRR8yRHr_ahEULLLxv0g2VDjBBIc-CY03t1IzCrbXdRvz9Mw"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"playerId\": 125\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/transferList/transfer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transferList",
+								"transfer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTransferListByPlayerId/{id}",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMkBnbWFpbC5jb20iLCJ1c2VySWQiOjU1LCJpYXQiOjE2NDg1ODI5MjAsImV4cCI6MTY0ODYxODkyMH0.el5oYdUU_kvyeVVRPVntKxJFhv4jxF7HKvx1sttRR8yRHr_ahEULLLxv0g2VDjBBIc-CY03t1IzCrbXdRvz9Mw"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/transferList/getTransferListByPlayerId/142",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transferList",
+								"getTransferListByPlayerId",
+								"142"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:8081/api/voiceMail/voiceMailActivation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMiIsImlzcyI6ImxpZmVjZWxsLWFkbWluIiwicm9sZUlkIjoxOSwidXNlcklkIjoiMTIiLCJpc0FkbWluIjpmYWxzZSwibGFuZ3VhZ2VJZCI6OCwiaWF0IjoxNjE0ODQ4Mjg0LCJleHAiOjE2MTQ5MzQ2ODQsInRlbmFudElkIjoxfQ.iJQVziA8KQrVAw3Z8oVrR7toqw1-cy58Z-HCx-Lzb20",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"msisdn\": \"05396394066\",\r\n    \"deactivationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"activationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"status\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/voiceMail/voiceMailActivation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"voiceMail",
+										"voiceMailActivation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 06:51:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Added\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "getAll For Admin",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJ1c2VySWQiOjMzLCJpYXQiOjE2NDg1ODEyNjMsImV4cCI6MTY0ODYxNzI2M30.qSp0xBz0W7zBZbfosR0h9s78W3gzHWEmuy3p7GQDX7MY8I_qVpqSpuJp0Ut3JO3BTC7-rlG43n5_MMhNyJCoDQ"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/transferList/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transferList",
+								"getAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:8081/api/voiceMail/voiceMailActivation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMiIsImlzcyI6ImxpZmVjZWxsLWFkbWluIiwicm9sZUlkIjoxOSwidXNlcklkIjoiMTIiLCJpc0FkbWluIjpmYWxzZSwibGFuZ3VhZ2VJZCI6OCwiaWF0IjoxNjE0ODQ4Mjg0LCJleHAiOjE2MTQ5MzQ2ODQsInRlbmFudElkIjoxfQ.iJQVziA8KQrVAw3Z8oVrR7toqw1-cy58Z-HCx-Lzb20",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"msisdn\": \"05396394066\",\r\n    \"deactivationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"activationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"status\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/voiceMail/voiceMailActivation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"voiceMail",
+										"voiceMailActivation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 06:51:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Added\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "getAll For User",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMkBnbWFpbC5jb20iLCJ1c2VySWQiOjU1LCJpYXQiOjE2NDg1ODI5MjAsImV4cCI6MTY0ODYxODkyMH0.el5oYdUU_kvyeVVRPVntKxJFhv4jxF7HKvx1sttRR8yRHr_ahEULLLxv0g2VDjBBIc-CY03t1IzCrbXdRvz9Mw"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/transferList/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transferList",
+								"getAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:8081/api/voiceMail/voiceMailActivation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMiIsImlzcyI6ImxpZmVjZWxsLWFkbWluIiwicm9sZUlkIjoxOSwidXNlcklkIjoiMTIiLCJpc0FkbWluIjpmYWxzZSwibGFuZ3VhZ2VJZCI6OCwiaWF0IjoxNjE0ODQ4Mjg0LCJleHAiOjE2MTQ5MzQ2ODQsInRlbmFudElkIjoxfQ.iJQVziA8KQrVAw3Z8oVrR7toqw1-cy58Z-HCx-Lzb20",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"msisdn\": \"05396394066\",\r\n    \"deactivationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"activationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"status\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/voiceMail/voiceMailActivation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"voiceMail",
+										"voiceMailActivation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 06:51:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Added\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "getTransferListWithFilterParameters For Admin",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJ1c2VySWQiOjI3LCJpYXQiOjE2NDg1NjgxNTMsImV4cCI6MTY0ODYwNDE1M30.qvUbn1Ijq8GZikAJsiP8Fq-B6oVsSEfboulOn0oqFpDFN2SfA30IeqeMk5QSHnbdZChzKRp_jKstjJVIj5U8vA"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"country\": \"Turkey\",\r\n\t\"teamName\":null,\r\n\t\"playerName\": null,\r\n\t\"price\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/transferList/getTransferListWithFilterParameters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transferList",
+								"getTransferListWithFilterParameters"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:8081/api/voiceMail/voiceMailActivation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMiIsImlzcyI6ImxpZmVjZWxsLWFkbWluIiwicm9sZUlkIjoxOSwidXNlcklkIjoiMTIiLCJpc0FkbWluIjpmYWxzZSwibGFuZ3VhZ2VJZCI6OCwiaWF0IjoxNjE0ODQ4Mjg0LCJleHAiOjE2MTQ5MzQ2ODQsInRlbmFudElkIjoxfQ.iJQVziA8KQrVAw3Z8oVrR7toqw1-cy58Z-HCx-Lzb20",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"msisdn\": \"05396394066\",\r\n    \"deactivationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"activationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"status\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/voiceMail/voiceMailActivation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"voiceMail",
+										"voiceMailActivation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 06:51:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Added\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "getTransferListWithFilterParameters For User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJ1c2VySWQiOjI3LCJpYXQiOjE2NDg1NjgxNTMsImV4cCI6MTY0ODYwNDE1M30.qvUbn1Ijq8GZikAJsiP8Fq-B6oVsSEfboulOn0oqFpDFN2SfA30IeqeMk5QSHnbdZChzKRp_jKstjJVIj5U8vA"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"country\": null,\r\n\t\"teamName\":null,\r\n\t\"playerName\": null,\r\n\t\"price\": 110000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/transferList/getTransferListWithFilterParameters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transferList",
+								"getTransferListWithFilterParameters"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:8081/api/voiceMail/voiceMailActivation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMiIsImlzcyI6ImxpZmVjZWxsLWFkbWluIiwicm9sZUlkIjoxOSwidXNlcklkIjoiMTIiLCJpc0FkbWluIjpmYWxzZSwibGFuZ3VhZ2VJZCI6OCwiaWF0IjoxNjE0ODQ4Mjg0LCJleHAiOjE2MTQ5MzQ2ODQsInRlbmFudElkIjoxfQ.iJQVziA8KQrVAw3Z8oVrR7toqw1-cy58Z-HCx-Lzb20",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"msisdn\": \"05396394066\",\r\n    \"deactivationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"activationTime\": \"2018-03-29T13:34:00.000\",\r\n    \"status\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/voiceMail/voiceMailActivation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"voiceMail",
+										"voiceMailActivation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 06:51:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Added\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "TransferList Delete For Admin",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJ1c2VySWQiOjMzLCJpYXQiOjE2NDg1ODEyNjMsImV4cCI6MTY0ODYxNzI2M30.qSp0xBz0W7zBZbfosR0h9s78W3gzHWEmuy3p7GQDX7MY8I_qVpqSpuJp0Ut3JO3BTC7-rlG43n5_MMhNyJCoDQ"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/transferList/delete/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transferList",
+								"delete",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
